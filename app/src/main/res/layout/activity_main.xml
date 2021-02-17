@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sip.biblio.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#E4B3822D"
+        android:fontFamily="cursive"
+        android:padding="30dp"
+        android:text="Bienvenue sur Biblio"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/activity_main_categorie_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:padding="30dp"
+        android:text="Liste des catégories"
+        android:onClick="callSListeCategories"
+        app:backgroundTint="#AB976410" />
+
+    <Button
+        android:id="@+id/activity_main_livre_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:padding="30dp"
+        android:text="Liste des livres"
+        android:onClick="callSListeLivres"
+        app:backgroundTint="#AB976410" />
+
+
+
+</LinearLayout>

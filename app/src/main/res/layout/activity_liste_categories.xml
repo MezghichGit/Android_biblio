@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listeCategories"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#E4B3822D"
+        android:fontFamily="cursive"
+        android:padding="10dp"
+        android:text="Liste des catégories"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editIdCategorie"
+        android:inputType="number"
+        android:hint="Entrez l'ID de la catégorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/editTitreCategorie"
+        android:inputType="text"
+        android:hint="Entrez le titre de la categorie "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
+
+
+    <Button
+        android:id="@+id/ajouterCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ajouter cette catégorie"
+        android:layout_gravity="center"
+        app:backgroundTint="#AB976410"
+        android:onClick="ajouterCat"
+        />
+
+    <Button
+        android:id="@+id/modifierCategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Modifier cette catégorie"
+        android:layout_gravity="center"
+        app:backgroundTint="#AB976410"
+        android:onClick="updateCat"
+        />
+
+
+
+    <Button
+        android:id="@+id/supprimerCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        app:backgroundTint="#AB976410"
+        android:text="Supprimer une categorie"
+        android:onClick="supprimerCat"
+        />
+
+    <Button
+        android:id="@+id/afficherCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        app:backgroundTint="#AB976410"
+        android:text="Afficher toutes les catégories"
+        android:onClick="viewAllCat"
+        />
+
+</LinearLayout>
