@@ -11,7 +11,7 @@ import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
-    SQLiteDatabase dbBiblio;
+    public static SQLiteDatabase dbBiblio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

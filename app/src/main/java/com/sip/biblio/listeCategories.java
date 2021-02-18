@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Window;
@@ -52,7 +53,11 @@ public class listeCategories extends AppCompatActivity {
         }
 
     public void viewAllCat(View view) {
-        if(view==afficherCategories)
+
+        Intent i = new Intent(getApplicationContext(), ListCategoriesActivity.class);
+
+        startActivity(i);
+        /*if(view==afficherCategories)
         {
             Cursor c=dbBiblio.rawQuery("SELECT * FROM categorie", null);
             if(c.getCount()==0)
@@ -67,7 +72,7 @@ public class listeCategories extends AppCompatActivity {
                 buffer.append("Titre: "+c.getString(1)+"\n");
             }
             showMessage("Liste des catégories", buffer.toString());
-        }
+        }*/
     }
 
 
